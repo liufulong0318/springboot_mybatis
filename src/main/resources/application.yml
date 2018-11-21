@@ -1,0 +1,16 @@
+#默认使用配置
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/shiro
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis配置
+mybatis:
+  #dao层接口包路径
+  typeAliasesPackage: com.forlong.demo.entity
+  #Mapper映射文件的位置(本demo是在resources下)
+  mapperLocations: classpath:mappers/*.xml
